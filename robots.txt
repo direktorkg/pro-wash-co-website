@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://direktorkg.github.io/pro-wash-co-website/sitemap.xml
