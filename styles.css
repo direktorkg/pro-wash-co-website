@@ -24,3 +24,13 @@
 
 /* Real laundry image replacing illustrative SVG */
 .business-art{overflow:hidden;border-radius:20px;min-width:0}.business-art img{display:block;width:100%;height:290px;object-fit:cover;object-position:65% 54%;border-radius:20px}@media(max-width:900px){.business-art img{height:auto;max-height:340px;object-fit:cover}}@media(max-width:540px){.business-art{display:block}.business-art img{height:215px;object-fit:cover;object-position:70% 50%}}
+
+/* Contact: balanced information and visible full-size map */
+.contact-panel{grid-template-columns:minmax(0,0.95fr) minmax(0,1.05fr);column-gap:32px;row-gap:10px;align-items:start}
+.contact-panel h2,.contact-panel .contact-sub{grid-column:1/-1}
+.contact-panel .contact-info{grid-column:1;grid-row:3;min-width:0}
+.contact-panel .map{grid-column:2;grid-row:3;min-width:0;height:355px;min-height:355px;border-radius:18px;background:#e6f4ff}
+.contact-panel .map iframe{display:block;width:100%;height:100%;min-height:355px;border:0}
+.contact-panel .contact-actions{grid-column:1/-1;grid-row:4;margin-top:15px}
+@media(max-width:800px){.contact-panel{grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:18px}.contact-panel .map{height:335px;min-height:335px}.contact-panel .map iframe{min-height:335px}}
+@media(max-width:650px){.contact-panel{grid-template-columns:1fr}.contact-panel h2,.contact-panel .contact-sub,.contact-panel .contact-info,.contact-panel .map,.contact-panel .contact-actions{grid-column:1}.contact-panel .contact-info{grid-row:3}.contact-panel .map{grid-row:4;height:280px;min-height:280px;margin-top:12px}.contact-panel .map iframe{min-height:280px}.contact-panel .contact-actions{grid-row:5}}
