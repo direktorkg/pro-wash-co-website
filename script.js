@@ -37,9 +37,4 @@ document.querySelectorAll('a[href^="tel:"],a[href^="viber:"],a[href*="wa.me/"],a
     window.gtag("event","contact_click",{contact_method:method});
   });
 });
-const mapButton=document.getElementById("load-map");
-mapButton.addEventListener("click",()=>{
-  const iframe=document.querySelector(".map iframe");
-  if(iframe&&iframe.dataset.src){iframe.src=iframe.dataset.src;iframe.removeAttribute("data-src")}
-  mapButton.hidden=true;
-});
+
