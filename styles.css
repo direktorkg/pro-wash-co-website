@@ -40,3 +40,6 @@
 
 /* Identical payment icons across Android, iOS and desktop */
 .payment-icon{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;color:#087fce;line-height:1}.payment-icon svg{display:block;width:36px;height:36px;flex-shrink:0}
+
+/* Student and athlete discount, displayed prominently on the home page */
+.student-athlete-discount{max-width:690px;margin:22px auto 0;padding:17px 20px;border:1px solid #9dd9fa;border-radius:16px;background:rgba(255,255,255,.86);color:#0b487d;font-size:clamp(16px,1.5vw,19px);font-weight:700;line-height:1.55;text-align:center;box-shadow:0 6px 20px rgba(8,126,200,.08)}@media(max-width:600px){.student-athlete-discount{margin-top:18px;padding:14px 15px;font-size:16px}}
